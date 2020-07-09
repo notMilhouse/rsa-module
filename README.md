@@ -13,7 +13,7 @@ In the python console, do:
 
 ```Python
 >>> import rsa
->>> encrypt_message(m, public_key)
+>>> rsa.encrypt_message(m, public_key)
 ```
 
 the private key is a pair of elements as: (e, N)
@@ -24,7 +24,7 @@ In the python console, do:
 
 ```Python
 >>> import rsa
->>> decrypt_message(c, private_key)
+>>> rsa.decrypt_message(c, private_key)
 ```
 
 the private key is a pair of elements as: (d, N)
@@ -35,7 +35,7 @@ In the python console, do:
 
 ```Python
 >>> import rsa
->>> gen_keys(p, q)
+>>> rsa.gen_keys(p, q)
 ```
 
 p and q are the prime numbers you want to use to generate the public and private keys
